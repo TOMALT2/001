@@ -1,0 +1,676 @@
+/* ========== Header (Navbar) ========== */
+header {
+    background-color: #001f3f;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  
+  .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #00bcd4;
+    cursor: default;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a:focus {
+    background-color: #00bcd4;
+    color: #001f3f;
+    outline: none;
+  }
+  
+  /* ========== Hero Section ========== */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 60px; /* مساحة لتجنب الشريط العلوي الثابت */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .hero-content {
+    max-width: 700px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ccc;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0097a7;
+  }
+  
+  /* ========== Services Section ========== */
+  .services {
+    background-color: #f2f2f2;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .services h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .service-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  .service-card h3 {
+    font-size: 24px;
+    color: #007acc;
+    margin-bottom: 15px;
+  }
+  
+  .service-card p {
+    font-size: 16px;
+    color: #555;
+  }
+
+  /* ========== About Us Section ========== */
+.about {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #007acc;
+  }
+  
+  .about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* ========== Our Team Section ========== */
+.team {
+    background-color: #f0f8ff;
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+  }
+  
+  .team h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #007acc;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .member {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .member:hover {
+    transform: translateY(-10px);
+  }
+  
+  .member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #007acc;
+  }
+  
+  .member h3 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+    color: #005f99;
+  }
+  
+  .member p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+  }
+
+  
+/* ========== Contact Us Section ========== */
+.contact {
+    background-color: #e6f0ff; /* لون خلفية فاتح ينسجم مع باقي التصميم */
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 60px auto;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    box-shadow: 0 4px 12px rgba(0, 122, 204, 0.15);
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #007acc; /* نفس لون العناوين */
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 18px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #005f99;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #007acc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #005f99;
+    background-color: #d9e8ff;
+    outline: none;
+  }
+  
+  .contact-form button {
+    background-color: #007acc;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  
+  .contact-form button:hover {
+    background-color: #005f99;
+  }
+
+  
+  /* ========== Latest Projects Section ========== */
+.projects {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 60px auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .projects h2 {
+    font-size: 32px;
+    color: #007acc;
+    margin-bottom: 40px;
+  }
+  
+  .projects-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background-color: #f4f9ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 122, 204, 0.15);
+    width: 300px;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 122, 204, 0.35);
+  }
+  
+  .project-card img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .project-card h3 {
+    margin: 15px 0 10px 0;
+    color: #005f99;
+  }
+  
+  .project-card p {
+    padding: 0 15px;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  /* ========== Testimonials Section ========== */
+.testimonials {
+    background-color: #e6f0ff;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 12px;
+  }
+  
+  .testimonials h2 {
+    font-size: 32px;
+    color: #007acc;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 122, 204, 0.15);
+    width: 280px;
+    font-style: italic;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 122, 204, 0.35);
+  }
+  
+  .testimonial-card h4 {
+    margin-top: 15px;
+    color: #005f99;
+  }
+  
+  .testimonial-card span {
+    font-size: 13px;
+    color: #777;
+  }
+
+  
+/* ===== Portfolio Section ===== */
+.portfolio-section {
+    background-color: #fff; /* خلفية بيضاء */
+    padding: 70px 20px 90px;
+    max-width: 1100px;
+    margin: 80px auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .portfolio-section h2 {
+    font-size: 34px;
+    color: #003366;
+    margin-bottom: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 مشاريع في السطر */
+    gap: 30px 25px; /* تباعد أفقي وعمودي */
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .project-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 6px 20px rgba(0, 75, 153, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .project-circle:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 30px rgba(0, 75, 153, 0.3);
+  }
+  
+  .project-circle img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  }
+  
+  .project-circle h3 {
+    font-size: 14px;
+    color: #004a99;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.1;
+    overflow-wrap: break-word; /* لكسر الكلمات إذا كانت طويلة */
+    user-select: none;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  
+/* === Technologies Section === */
+.technologies-section {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .technologies-section .section-title {
+    font-size: 2.5rem;
+    color: #2b2b2b;
+    margin-bottom: 40px;
+  }
+  
+  .tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .tech-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s;
+  }
+  
+  .tech-item:hover {
+    transform: scale(1.1);
+    background-color: #e1e1e1;
+  }
+  
+  .tech-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+  
+  .tech-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+  }
+
+  
+  /* === Blog Section === */
+.blog-section {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .blog-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: #2c2c2c;
+  }
+  
+  .blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .blog-card {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .blog-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .blog-content p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .read-more {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #2196f3;
+    transition: color 0.3s;
+  }
+  
+  .read-more:hover {
+    color: #0d47a1;
+  }
+
+  
+
+/* === Awards Section === */
+.awards-section {
+    padding: 100px 30px;
+    background-color: #fefefe;
+    text-align: center;
+  }
+  
+  .awards-section .section-title {
+    font-size: 2.5rem;
+    color: #0b3954;
+    margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* ثابت: 4 أعمدة */
+    gap: 40px;
+    justify-items: center;
+  }
+  
+  @media (max-width: 992px) {
+    .awards-grid {
+      grid-template-columns: repeat(2, 1fr); /* على الشاشات المتوسطة: 2 */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .awards-grid {
+      grid-template-columns: 1fr; /* على الشاشات الصغيرة: عمود واحد */
+    }
+  }
+  
+  .award-card {
+    background: linear-gradient(145deg, #fff8e1, #ffecb3);
+    border: 1px solid #ffe082;
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 260px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .award-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  .award-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  
+  .award-card h4 {
+    font-size: 1.1rem;
+    color: #5d4037;
+    margin-bottom: 10px;
+  }
+  
+  .award-card span {
+    font-size: 0.9rem;
+    color: #7b7b7b;
+  }
+  
+  
+  
+  
+  
